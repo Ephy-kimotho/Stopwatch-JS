@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width:100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("palm_trees.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    user-select: none;
+}
+
+
+.container{
+    width:30vw;
+    background-color: #F4F1BB;
+    padding: 20px 0;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.timer{
+    width:100%;
+    font-size: 5vw;
+    padding:10px;
+}
+.buttons{
+    width:100%;
+    height: auto;
+}
+
+button{
+    font-size: 2vw;
+    color:#fff;
+    border:none; 
+    margin: 0 5px;
+}
+
+button i {
+    width: 100%;
+    padding:5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+#play{
+    background-color: rgb(102, 218, 49);
+}
+
+#pause{
+    background-color: rgb(243, 164, 17);
+}
+
+#reset{
+    background-color: rgb(241, 94, 68);
+}
+
+@media screen and (max-width:768px){
+    .container{
+        width:300px;
+    }
+
+    .timer{
+        font-size: 45px;
+    }
+    button{
+        font-size: 20px;
+    }
+}
